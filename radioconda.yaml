@@ -1,14 +1,14 @@
 name: radioconda
 category: main
 channels:
-  - conda-forge
   - ryanvolz
+  - conda-forge
 platforms:
-  - linux-64
-  - linux-aarch64
-  - linux-ppc64le
-  - osx-64
-  - osx-arm64
+#  - linux-64
+#  - linux-aarch64
+#  - linux-ppc64le
+#  - osx-64
+#  - osx-arm64
   - win-64
 dependencies:
   - airspy
@@ -19,28 +19,7 @@ dependencies:
   - codec2
   - ephem
   - gnss-sdr # [unix]
-  - gnuradio 3.10.*
-  - gnuradio-adsb
-  - gnuradio-dect2
-  - gnuradio-filerepeater
-  - gnuradio-foo
-  - gnuradio-fosphor
-  - gnuradio-gpredict-doppler
-  - gnuradio-hermeslite2 # [unix]
-  - gnuradio-hpsdr # [unix]
-  - gnuradio-ieee802_11
-  - gnuradio-ieee802_15_4
-  - gnuradio-inspector
-  - gnuradio-iqbalance
-  - gnuradio-iridium
-  - gnuradio-leo
-  - gnuradio-lora_sdr
-  - gnuradio-m2k
-  - gnuradio-osmosdr
-  - gnuradio-paint
-  - gnuradio-radar
-  - gnuradio-rds
-  - gnuradio-satellites
+  - gnuradio >=3.10.*
   - gqrx
   - hackrf
   - hamlib-all
@@ -52,7 +31,7 @@ dependencies:
   - matplotlib
   - mirisdr
   - m17-cxx-demod
-  - numpy
+  - numpy >=2.*
   - pandas
   - pyadi-iio
   - pyfda
@@ -74,3 +53,5 @@ dependencies:
   - soapysdr-module-uhd
   - soapysdr-module-volk-converters
   - uhd
+  - boost-cpp
+  - gnuradio-build-deps
